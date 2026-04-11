@@ -9,10 +9,12 @@ import { Testimonials } from "@/components/Testimonials";
 import { GlassCard } from "@/components/GlassCard";
 import { siteContent } from "@/content/siteContent";
 
+const pageBaseClasses = "relative min-h-screen overflow-x-hidden bg-gradient-to-br";
+
 export default function Home() {
   return (
     <div
-      className={`relative min-h-screen overflow-x-hidden bg-gradient-to-br ${siteContent.theme.backgroundGradient}`}
+      className={`${pageBaseClasses} ${siteContent.theme.backgroundGradient}`}
       style={
         {
           "--theme-glow": siteContent.theme.glowColor,
@@ -21,11 +23,11 @@ export default function Home() {
       }
     >
       <div
-        aria-hidden
+        aria-hidden={true}
         className="pointer-events-none absolute -left-16 top-24 h-64 w-64 rounded-full bg-violet-400/20 blur-3xl"
       />
       <div
-        aria-hidden
+        aria-hidden={true}
         className="pointer-events-none absolute -right-16 top-64 h-64 w-64 rounded-full bg-cyan-300/20 blur-3xl"
       />
 

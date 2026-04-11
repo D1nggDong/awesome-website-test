@@ -89,7 +89,7 @@ export const siteContent: SiteContent = {
       "I design and build polished web experiences blending performance, visual clarity, and delightful motion.",
     ctaLabel: "View Projects",
     ctaHref: "#projects",
-    secondaryLabel: "Let\'s Talk",
+    secondaryLabel: "Let's Talk",
     secondaryHref: "#contact",
   },
   about: {
@@ -175,8 +175,8 @@ export const siteContent: SiteContent = {
     ],
   },
   cta: {
-    title: "Let\'s build something exceptional.",
-    description: "Tell me what you\'re creating, and I\'ll help shape a web experience your audience remembers.",
+    title: "Let's build something exceptional.",
+    description: "Tell me what you're creating, and I'll help shape a web experience your audience remembers.",
     buttonLabel: "Start a Project",
     buttonHref: "mailto:hello@example.com",
   },

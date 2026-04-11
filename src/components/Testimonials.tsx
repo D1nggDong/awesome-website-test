@@ -15,6 +15,7 @@ export function Testimonials() {
         <SectionHeader
           title={siteContent.testimonials.title}
           subtitle={siteContent.testimonials.subtitle}
+          eyebrow={siteContent.siteTagline}
         />
         <motion.div
           variants={staggerContainer}

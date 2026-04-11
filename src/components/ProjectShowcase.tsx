@@ -12,7 +12,11 @@ export function ProjectShowcase() {
   return (
     <section id="projects" className="px-4 py-16 sm:py-24">
       <div className="mx-auto max-w-6xl">
-        <SectionHeader title={siteContent.projects.title} subtitle={siteContent.projects.subtitle} />
+        <SectionHeader
+          title={siteContent.projects.title}
+          subtitle={siteContent.projects.subtitle}
+          eyebrow={siteContent.siteTagline}
+        />
         <motion.div
           variants={staggerContainer}
           initial={reducedMotion ? false : "hidden"}

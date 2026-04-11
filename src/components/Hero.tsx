@@ -14,14 +14,14 @@ export function Hero() {
     <section className="relative overflow-hidden px-4 pb-16 pt-20 sm:pt-24">
       <motion.div
         style={{ y: orbY, backgroundColor: "var(--theme-glow)" }}
-        aria-hidden
+        aria-hidden={true}
         className="pointer-events-none absolute inset-x-0 top-0 mx-auto h-64 w-64 rounded-full blur-3xl"
         transition={{ duration: 0.2 }}
       />
 
       <div className="relative mx-auto max-w-4xl text-center">
         <div
-          aria-hidden
+          aria-hidden={true}
           className={`mx-auto mb-8 h-1 w-32 rounded-full bg-gradient-to-r ${siteContent.theme.accentGradient}`}
         />
         <motion.h1

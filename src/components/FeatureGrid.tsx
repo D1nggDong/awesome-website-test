@@ -12,7 +12,11 @@ export function FeatureGrid() {
   return (
     <section id="skills" className="px-4 py-16 sm:py-24">
       <div className="mx-auto max-w-6xl">
-        <SectionHeader title={siteContent.features.title} subtitle={siteContent.features.subtitle} />
+        <SectionHeader
+          title={siteContent.features.title}
+          subtitle={siteContent.features.subtitle}
+          eyebrow={siteContent.siteTagline}
+        />
         <motion.div
           variants={staggerContainer}
           initial={reducedMotion ? false : "hidden"}
@@ -27,7 +31,7 @@ export function FeatureGrid() {
               whileHover={reducedMotion ? undefined : hoverLift}
             >
               <GlassCard>
-                <p className="text-2xl" aria-hidden>
+                <p className="text-2xl" aria-hidden={true}>
                   {item.icon}
                 </p>
                 <h3 className="mt-4 text-xl font-semibold text-white">{item.title}</h3>

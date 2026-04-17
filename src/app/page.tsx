@@ -42,9 +42,9 @@ export default function Home() {
           </div>
         </section>
 
-         <StoryBoard />
-         <CTASection />
-       </main>
+        <StoryBoard />
+        <CTASection />
+      </main>
       <Footer />
     </div>
   );

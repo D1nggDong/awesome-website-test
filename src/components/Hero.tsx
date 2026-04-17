@@ -28,7 +28,7 @@ export function Hero() {
           variants={fadeUp}
           initial={reducedMotion ? false : "hidden"}
           whileInView={reducedMotion ? undefined : "visible"}
-          viewport={{ once: false, amount: 0.6 }}
+          viewport={{ once: false, amount: 0.35 }}
           className="text-balance text-4xl font-semibold tracking-tight text-white sm:text-6xl"
         >
           {siteContent.hero.heading}
@@ -37,7 +37,7 @@ export function Hero() {
           variants={fadeUp}
           initial={reducedMotion ? false : "hidden"}
           whileInView={reducedMotion ? undefined : "visible"}
-          viewport={{ once: false, amount: 0.6 }}
+          viewport={{ once: false, amount: 0.35 }}
           transition={{ delay: 0.1 }}
           className="mx-auto mt-6 max-w-2xl text-lg text-slate-300"
         >
@@ -47,7 +47,7 @@ export function Hero() {
           variants={fadeUp}
           initial={reducedMotion ? false : "hidden"}
           whileInView={reducedMotion ? undefined : "visible"}
-          viewport={{ once: false, amount: 0.6 }}
+          viewport={{ once: false, amount: 0.35 }}
           transition={{ delay: 0.2 }}
           className="mt-10 flex flex-wrap justify-center gap-4"
         >

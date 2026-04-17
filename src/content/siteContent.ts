@@ -29,6 +29,15 @@ export type SocialLink = {
   href: string;
 };
 
+export type StoryChapter = {
+  id: string;
+  stage: string;
+  title: string;
+  description: string;
+  bullets: string[];
+  accent: string;
+};
+
 export type SiteContent = {
   siteTitle: string;
   siteTagline: string;
@@ -65,6 +74,11 @@ export type SiteContent = {
     description: string;
     buttonLabel: string;
     buttonHref: string;
+  };
+  story: {
+    title: string;
+    subtitle: string;
+    chapters: StoryChapter[];
   };
   footer: {
     text: string;
@@ -180,6 +194,52 @@ export const siteContent: SiteContent = {
     buttonLabel: "Start a Project",
     buttonHref: "mailto:hello@example.com",
   },
+  story: {
+    title: "A scroll-first product story",
+    subtitle:
+      "Move through each chapter to see how strategy, craft, and delivery come together into one polished web experience.",
+    chapters: [
+      {
+        id: "discovery",
+        stage: "Chapter 01",
+        title: "Discovery sets the narrative",
+        description:
+          "Every engagement starts with audience intent, brand goals, and conversion moments so each section has a job.",
+        bullets: [
+          "Clarify the message hierarchy",
+          "Map content to buyer intent",
+          "Plan story beats for scroll depth",
+        ],
+        accent: "from-cyan-400/30 via-blue-500/20 to-violet-500/20",
+      },
+      {
+        id: "design",
+        stage: "Chapter 02",
+        title: "Design creates momentum",
+        description:
+          "Visual systems are built as cinematic scenes so users feel progression rather than reading disconnected blocks.",
+        bullets: [
+          "Create immersive chapter transitions",
+          "Use motion to guide focus",
+          "Keep typography bold and readable",
+        ],
+        accent: "from-violet-400/30 via-fuchsia-500/20 to-pink-500/20",
+      },
+      {
+        id: "delivery",
+        stage: "Chapter 03",
+        title: "Delivery turns story into results",
+        description:
+          "The final build prioritizes speed, accessibility, and confidence so the experience looks premium and performs reliably.",
+        bullets: [
+          "Ship lightweight, responsive UI",
+          "Preserve accessibility and clarity",
+          "Optimize for engagement and trust",
+        ],
+        accent: "from-emerald-400/30 via-teal-500/20 to-cyan-500/20",
+      },
+    ],
+  },
   footer: {
     text: "© 2026 Nova Atelier. Built with care.",
     legalLinks: [
@@ -189,9 +249,10 @@ export const siteContent: SiteContent = {
   },
   navigation: [
     { label: "About", href: "#about" },
-    { label: "Skills", href: "#skills" },
-    { label: "Projects", href: "#projects" },
-    { label: "Testimonials", href: "#testimonials" },
+    { label: "Story", href: "#story" },
+    { label: "Discovery", href: "#chapter-discovery" },
+    { label: "Design", href: "#chapter-design" },
+    { label: "Delivery", href: "#chapter-delivery" },
     { label: "Contact", href: "#contact" },
   ],
   socialLinks: [

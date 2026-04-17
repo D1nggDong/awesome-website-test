@@ -16,7 +16,7 @@ export function CTASection() {
           variants={fadeUp}
           initial={reducedMotion ? false : "hidden"}
           whileInView={reducedMotion ? undefined : "visible"}
-          viewport={{ once: true, amount: 0.4 }}
+          viewport={{ once: false, amount: 0.4 }}
         >
           <GlassCard className="text-center">
             <h2 className="text-3xl font-semibold tracking-tight text-white">{siteContent.cta.title}</h2>

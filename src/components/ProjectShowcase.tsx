@@ -21,7 +21,7 @@ export function ProjectShowcase() {
           variants={staggerContainer}
           initial={reducedMotion ? false : "hidden"}
           whileInView={reducedMotion ? undefined : "visible"}
-          viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: false, amount: 0.2 }}
           className="grid gap-5 lg:grid-cols-3"
         >
           {siteContent.projects.items.map((project) => (

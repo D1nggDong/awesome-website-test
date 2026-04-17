@@ -27,7 +27,8 @@ export function Hero() {
         <motion.h1
           variants={fadeUp}
           initial={reducedMotion ? false : "hidden"}
-          animate={reducedMotion ? undefined : "visible"}
+          whileInView={reducedMotion ? undefined : "visible"}
+          viewport={{ once: false, amount: 0.6 }}
           className="text-balance text-4xl font-semibold tracking-tight text-white sm:text-6xl"
         >
           {siteContent.hero.heading}
@@ -35,7 +36,8 @@ export function Hero() {
         <motion.p
           variants={fadeUp}
           initial={reducedMotion ? false : "hidden"}
-          animate={reducedMotion ? undefined : "visible"}
+          whileInView={reducedMotion ? undefined : "visible"}
+          viewport={{ once: false, amount: 0.6 }}
           transition={{ delay: 0.1 }}
           className="mx-auto mt-6 max-w-2xl text-lg text-slate-300"
         >
@@ -44,7 +46,8 @@ export function Hero() {
         <motion.div
           variants={fadeUp}
           initial={reducedMotion ? false : "hidden"}
-          animate={reducedMotion ? undefined : "visible"}
+          whileInView={reducedMotion ? undefined : "visible"}
+          viewport={{ once: false, amount: 0.6 }}
           transition={{ delay: 0.2 }}
           className="mt-10 flex flex-wrap justify-center gap-4"
         >

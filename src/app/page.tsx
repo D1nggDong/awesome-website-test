@@ -1,12 +1,10 @@
 import type { CSSProperties } from "react";
 import { CTASection } from "@/components/CTASection";
-import { FeatureGrid } from "@/components/FeatureGrid";
 import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/Hero";
 import { Navbar } from "@/components/Navbar";
-import { ProjectShowcase } from "@/components/ProjectShowcase";
-import { Testimonials } from "@/components/Testimonials";
 import { GlassCard } from "@/components/GlassCard";
+import { StoryBoard } from "@/components/StoryBoard";
 import { siteContent } from "@/content/siteContent";
 
 const pageBaseClasses = "relative min-h-screen overflow-x-hidden bg-gradient-to-br";
@@ -44,11 +42,9 @@ export default function Home() {
           </div>
         </section>
 
-        <FeatureGrid />
-        <ProjectShowcase />
-        <Testimonials />
-        <CTASection />
-      </main>
+         <StoryBoard />
+         <CTASection />
+       </main>
       <Footer />
     </div>
   );

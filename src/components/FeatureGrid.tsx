@@ -21,7 +21,7 @@ export function FeatureGrid() {
           variants={staggerContainer}
           initial={reducedMotion ? false : "hidden"}
           whileInView={reducedMotion ? undefined : "visible"}
-          viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: false, amount: 0.2 }}
           className="grid gap-5 md:grid-cols-2"
         >
           {siteContent.features.items.map((item) => (
